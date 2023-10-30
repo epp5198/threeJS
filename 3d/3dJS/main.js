@@ -35,3 +35,12 @@ const renderer = new THREE.WebGLRenderer({
     canvas: document.querySelector('#bg'),
 });
 renderer.render(scene, camera);
+renderer.setPixelRatio(window.devicePixelRatio);
+renderer.setSize(window.innerWidth, window.innerHeight);
+camera.position.setZ(50);
+camera.position.setX(-3);
+const geometry = new THREE.BoxGeometry(10, 10, 10);
+
+const material = new THREE.MeshBasicMaterial( { color: 00FF00 } );
+
+const cube = new THREE.Mesh( geometry, material );
