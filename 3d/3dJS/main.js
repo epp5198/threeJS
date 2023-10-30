@@ -57,7 +57,6 @@ scene.add(icoMesh);
 icoMesh.position.z= -15;
 icoMesh.position.x= 15;
 
-
 const pointLight = new THREE.PointLight(0xffffff);
 pointLight.position.set(0, -10, 10);
 
@@ -66,3 +65,5 @@ ambientLight.position.set(25, -15, -400);
 
 scene.add(pointLight);
 scene.add(ambientLight);
+
+const material = new THREE.MeshStandardMaterial( { color: 0xFF6347 } );
